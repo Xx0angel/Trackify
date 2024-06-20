@@ -1,0 +1,23 @@
+@import url(./variables.css);
+
+.btn {
+    display: block;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    width: calc(100% - 1rem);
+    text-align: center;
+    align-items: center;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.btn:hover {
+    background-color: var(--second-color);
+    transition: ease-in 250ms;
+    -webkit-transition: ease-in 250ms;
+    -moz-transition: ease-in 250ms;
+    -ms-transition: ease-in 250ms;
+    -o-transition: ease-in 250ms;
+}

@@ -1,0 +1,79 @@
+@charset "UTF-8";
+@import url(./variables.css);
+/* MenuHamburguesa.css */
+.menu-hamburguesa {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.menu-hamburguesa h1 {
+  font-size: 1.5rem;
+}
+
+.boton-hamburguesa {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.menu {
+  position: absolute;
+  top: 80px;
+  /*Ajustalaposicióndelmenúsegúnseanecesario*/
+  right: 0;
+  background-color: var(--primary-color);
+  color: white;
+  width: 100%;
+  /*Ajustaelanchodelmenúsegúnseanecesario*/
+  height: 100vh;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu ul li {
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.menu ul li:hover {
+  background-color: var(--primary-color);
+}
+
+@media (min-width: 1280px) {
+  .boton-hamburguesa {
+    display: none;
+  }
+  .menu {
+    position: relative;
+    top: 0px;
+    /*Ajustalaposicióndelmenúsegúnseanecesario*/
+    right: 0;
+    background-color: var(--primary-color);
+    color: white;
+    width: auto;
+    /*Ajustaelanchodelmenúsegúnseanecesario*/
+    height: auto;
+  }
+  .menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+/*# sourceMappingURL=header.css.map */
